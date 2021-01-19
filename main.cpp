@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 int main()
@@ -7,14 +8,9 @@ int main()
 
     cin >> n1 >> n2;
 
-    if(n1 > n2)
-    {
-        cout << n1 - n2;
-    }
-    else
-    {
-        cout << n1 + n2;
-    }
+    int result = (n1 > n2) ? n1 - n2 : n1 + n2;
+
+    cout << result;
 
     return 0;
 }
